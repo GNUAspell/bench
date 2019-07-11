@@ -1,0 +1,49 @@
+Entries beginning with NEW are ones the Aspell with Double Metaphone algorithm
+got but did not with the Original.  The 3rd column is the position on the
+suggestion list using Aspell .30.1, the 4th column is the position using
+Aspell with the Double Metaphone algorithm.
+
+Rev 1.1
+
+Kevin Atkinson <kevinatk@home.com>
+
+Normal Mode:
+
+NEW : Accosinly	Occasionally	0	8
+NEW : aricticure	architecture	0	2
+NEW : asentote	asymptote	0	21
+NEW : expleyly	explicitly	0	12
+NEW : majaerly	majority	0	13
+ORIG: rought	roughly	16	0
+NEW : sicolagest	psychologist	0	9
+
+Fast Mode:
+
+NEW : Accosinly	Occasionally	0	6
+NEW : appresteate	appreciate	0	1
+NEW : aricticure	architecture	0	2
+ORIG: bigginging	beginning	1	0
+NEW : disssicion	discussion	0	2
+NEW : excpt	except	0	1
+NEW : intertesd	interested	0	3
+ORIG: judgement	judgment	1	0
+NEW : majaerly	majority	0	11
+NEW : objectsion	objects	0	3
+ORIG: partrucal	particular	3	0
+NEW : pronisation	pronunciation	0	2
+ORIG: pscolgst	psychologist	1	0
+ORIG: rectangeles	rectangle	3	0
+ORIG: rought	roughly	11	0
+NEW : sicolagest	psychologist	0	3
+ORIG: subjecribed	subscribed	1	0
+NEW : verison	version	0	1
+
+Bad Spellers Mode:
+
+NEW : aricticure	architecture	0	2
+ORIG: elligit	elegant	20	0
+ORIG: extions	extensions	39	0
+NEW : intertes	interested	0	99
+NEW : invermeantial	environmental	0	9
+ORIG: polation	politician	61	0
+NEW : precios	precision	0	20

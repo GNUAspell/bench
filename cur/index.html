@@ -1,0 +1,292 @@
+<html>
+<head>
+<title>Spell Checker Test Kernel Results</title>
+</head>
+<body>
+<h1>Spell Checker Test Kernel Results</h1>
+<h2><i>Original Data Set</i></h2>
+<hr>
+<h3>Scores</h3>
+<table border=1>
+<tr><td width=20%>
+<th width=10%>&nbsp;Score&nbsp;
+<th width=10%>Total Not Found<th width=10%>Total Found
+    <th width=8.35%>First<th width=8.33%>1 - 5<th width=8.33%>1 - 10<th width=8.33%>1 - 25<th width=8.33%>1 - 50<th width=8.33%>Any</th>
+<tr>
+  <td><b><a href="aspell-.31-normal.res">Aspell .31 / Normal</a></b>
+  <td align=right><b>93.1</b>
+  <td align=right>34  
+  <td align=right>459
+  <td align=right>59.6
+  <td align=right>85.6
+  <td align=right>90.1
+  <td align=right>92.9
+  <td align=right>93.1
+  <td align=right>93.1
+<tr>
+  <td><b><a href="aspell-.33-normal.res">Aspell .33 / Normal</a></b>
+  <td align=right><b>91.7</b>
+  <td align=right>41  
+  <td align=right>452
+  <td align=right>57.0
+  <td align=right>80.9
+  <td align=right>88.0
+  <td align=right>91.1
+  <td align=right>91.5
+  <td align=right>91.7
+<tr>
+  <td><b><a href="aspell-.50-normal.res">Aspell 0.50 / Normal</a></b>
+  <td align=right><b>91.9</b>
+  <td align=right>40  
+  <td align=right>453
+  <td align=right>57.2
+  <td align=right>81.1
+  <td align=right>88.4
+  <td align=right>91.5
+  <td align=right>91.7
+  <td align=right>91.9
+<tr>
+  <td><b><a href="aspell-.60-normal.res">Aspell 0.60 / Normal</a></b>
+  <td align=right><b>89.0</b>
+  <td align=right>54  
+  <td align=right>439
+  <td align=right>53.1
+  <td align=right>79.7
+  <td align=right>86.2
+  <td align=right>88.4
+  <td align=right>89.0
+  <td align=right>89.0
+<tr>
+  <td><b><a href="aspell-.60-slow.res">Aspell 0.60 / Slow</a></b>
+  <td align=right><b>93.1</b>
+  <td align=right>34  
+  <td align=right>459
+  <td align=right>53.3
+  <td align=right>80.7
+  <td align=right>89.0
+  <td align=right>92.5
+  <td align=right>93.1
+  <td align=right>93.1
+<tr>
+  <td><b><a href="aspell-.60.6-normal.res">Aspell 0.60.6 / Normal</a></b>
+  <td align=right><b>89.7</b>
+  <td align=right>51  
+  <td align=right>442
+  <td align=right>53.3
+  <td align=right>80.1
+  <td align=right>86.8
+  <td align=right>89.0
+  <td align=right>89.7
+  <td align=right>89.7
+<tr>
+  <td><b><a href="aspell-.60.6-slow.res">Aspell 0.60.6 / Slow</a></b>
+  <td align=right><b>92.9</b>
+  <td align=right>35  
+  <td align=right>458
+  <td align=right>53.3
+  <td align=right>80.5
+  <td align=right>88.8
+  <td align=right>92.3
+  <td align=right>92.9
+  <td align=right>92.9
+<tr>
+  <td><b><a href="hunspell.res">Hunspell 1.1.12</a></b>
+  <td align=right><b>81.7</b>
+  <td align=right>90  
+  <td align=right>403
+  <td align=right>55.2
+  <td align=right>78.1
+  <td align=right>80.7
+  <td align=right>81.7
+  <td align=right>81.7
+  <td align=right>81.7
+<tr>
+  <td><b><a href="hunspell-phonet.res">Hunspell w/ Phonetic Lookup</a></b>
+  <td align=right><b>85.6</b>
+  <td align=right>71  
+  <td align=right>422
+  <td align=right>56.0
+  <td align=right>81.9
+  <td align=right>85.2
+  <td align=right>85.6
+  <td align=right>85.6
+  <td align=right>85.6
+<tr>
+  <td><b><a href="ispell.res">Ispell 3.1.20 w/ -S option</a></b>
+  <td align=right><b>54.8</b>
+  <td align=right>223  
+  <td align=right>270
+  <td align=right>38.3
+  <td align=right>51.9
+  <td align=right>54.0
+  <td align=right>54.8
+  <td align=right>54.8
+  <td align=right>54.8
+<tr>
+  <td><b><a href="word.res">Word 97</a></b>
+  <td align=right><b>72.2</b>
+  <td align=right>137  
+  <td align=right>356
+  <td align=right>59.0
+  <td align=right>70.8
+  <td align=right>72.2
+  <td align=right>72.2
+  <td align=right>72.2
+  <td align=right>72.2
+</table>
+<i><b>Note:</b> Only Data in which the correct spelling was found in all three
+dictionaries was counted.</i>
+<p>
+The Score is: <b><i>(Total Found)/(Total)*100</i></b><Br>
+First is: <b><i>(Total Found First On List)/(Total)*100</i></b>,
+1-5 is: <b><i>(Total Found 1st - 5th)/(Total)*100</i></b>, etc...
+<p>
+
+<p>
+<img src="scores.png"><br>
+<i><font size = -1>Graph created with <a href="http://www.sgpr.net/">Ploticus</a></font></i>
+<p>
+<hr>
+<h3>Number of Results Returned</h3>
+<table border=1>
+<tr>
+<td width=30%>
+<th width=10%>Min</th>
+<th width=10%>5%</th>
+<th width=10%>25%</th>
+<th width=10%>50%</th>
+<th width=10%>75%</th>
+<th width=10%>95%</th>
+<th width=10%>Max</th>
+<tr>
+  <td><a href="aspell-.31-normal.res">Aspell .31 / Normal</a>
+  <td align=right>3
+  <td align=right>4
+  <td align=right>8
+  <td align=right>12
+  <td align=right>20
+  <td align=right>36
+  <td align=right>96
+<tr>
+  <td><a href="aspell-.33-normal.res">Aspell .33 / Normal</a>
+  <td align=right>3
+  <td align=right>4
+  <td align=right>7
+  <td align=right>12
+  <td align=right>19
+  <td align=right>37
+  <td align=right>64
+<tr>
+  <td><a href="aspell-.50-normal.res">Aspell 0.50 / Normal</a>
+  <td align=right>3
+  <td align=right>4
+  <td align=right>7
+  <td align=right>12
+  <td align=right>19
+  <td align=right>36
+  <td align=right>63
+<tr>
+  <td><a href="aspell-.60-normal.res">Aspell 0.60 / Normal</a>
+  <td align=right>2
+  <td align=right>4
+  <td align=right>8
+  <td align=right>13
+  <td align=right>24
+  <td align=right>47
+  <td align=right>100
+<tr>
+  <td><a href="aspell-.60-slow.res">Aspell 0.60 / Slow</a>
+  <td align=right>3
+  <td align=right>4
+  <td align=right>9
+  <td align=right>14
+  <td align=right>26
+  <td align=right>50
+  <td align=right>100
+<tr>
+  <td><a href="aspell-.60.6-normal.res">Aspell 0.60.6 / Normal</a>
+  <td align=right>2
+  <td align=right>4
+  <td align=right>7
+  <td align=right>12
+  <td align=right>24
+  <td align=right>47
+  <td align=right>96
+<tr>
+  <td><a href="aspell-.60.6-slow.res">Aspell 0.60.6 / Slow</a>
+  <td align=right>2
+  <td align=right>4
+  <td align=right>8
+  <td align=right>14
+  <td align=right>26
+  <td align=right>50
+  <td align=right>96
+<tr>
+  <td><a href="hunspell.res">Hunspell 1.1.12</a>
+  <td align=right>1
+  <td align=right>1
+  <td align=right>4
+  <td align=right>4
+  <td align=right>5
+  <td align=right>10
+  <td align=right>15
+<tr>
+  <td><a href="hunspell-phonet.res">Hunspell w/ Phonetic Lookup</a>
+  <td align=right>1
+  <td align=right>1
+  <td align=right>4
+  <td align=right>6
+  <td align=right>7
+  <td align=right>11
+  <td align=right>15
+<tr>
+  <td><a href="ispell.res">Ispell 3.1.20 w/ -S option</a>
+  <td align=right>0
+  <td align=right>0
+  <td align=right>0
+  <td align=right>1
+  <td align=right>3
+  <td align=right>10
+  <td align=right>29
+<tr>
+  <td><a href="word.res">Word 97</a>
+  <td align=right>0 
+  <td align=right>0 
+  <td align=right>1 
+  <td align=right>2 
+  <td align=right>4 
+  <td align=right>10 
+  <td align=right>20 
+</table>
+<hr>
+<h2>Run Times (CPU Time)</h2>
+<table border=1>
+<tr><td><a href="aspell-.31-normal.time">Aspell .31 / Normal</a><td align=right>3.58
+<tr><td><a href="aspell-.33-normal.time">Aspell .33 / Normal</a><td align=right>29.46
+<tr><td><a href="aspell-.50-normal.time">Aspell 0.50 / Normal</a><td align=right>24.02
+<tr><td><a href="aspell-.60-normal.time">Aspell 0.60 / Normal</a><td align=right>0.69
+<tr><td><a href="aspell-.60-slow.time">Aspell 0.60 / Slow</a><td align=right>4.82
+<tr><td><a href="aspell-.60.6-normal.time">Aspell 0.60.6 / Normal</a><td align=right>1.18
+<tr><td><a href="aspell-.60.6-slow.time">Aspell 0.60.6 / Slow</a><td align=right>5.26
+<tr><td><a href="hunspell.time">Hunspell 1.1.12</a><td align=right>24.39
+<tr><td><a href="hunspell-phonet.time">Hunspell w/ Phonetic Lookup</a><td align=right>42.16
+<tr><td><a href="ispell.time">Ispell 3.1.20 w/ -S option</a><td align=right>0.15
+<tr><td>Word 97<td align=right>&nbsp;
+</table><hr>
+<h2>The Raw Data</h2>
+<ul>
+<li><a href="batch0.tab">Test Data</a>
+<li><a href="data.tar.gz">Results, Scripts and Raw Data</a>
+</ul>
+<hr>
+<h2>About The Data</h2>
+The test data used is the same data set found in the <a
+href="../orig">original tests</a>.  It tries to focus on really bad
+misspellings.
+<hr>
+<p align=center>
+<a href="../">Other Versions</a> | 
+<a href="http://aspell.net/">Back to Aspell</a>
+</p>
+</body>
+</html>
