@@ -29,6 +29,7 @@ Wikipedia.
 #  ['aspell-cvs-normal', 'Aspell', 'Aspell CVS / Normal'],
 #  ['aspell-cvs-slow', 'Aspell', 'Aspell CVS / Slow'],
 #  ['aspell-.60-bad', 'Aspell', 'Aspell 0.60 / Bad Spellers'],
+  ['nuspell', 'Nuspell', 'Nuspell 4.2.0'],
   ['hunspell', 'Hunspell', 'Hunspell 1.1.12'],
   ['hunspell-phonet', 'Hunspell', 'Hunspell w/ Phonetic Lookup'],
   ['ispell', 'Ispell', 'Ispell 3.1.20 w/ -S option'],

@@ -20,7 +20,7 @@ my $base = $ARGV[1];
 
 open R, ">$base.res";
 
-my $pid = open2($in, $out, "/usr/bin/time $command -a -S 2> $base.time");
+my $pid = open2($in, $out, "/usr/bin/time $command -a 2> $base.time");
 print $out "!\n";
 <$in>;
 
@@ -32,15 +32,22 @@ while (<$data>) {
   print $out "$cor\n";
   my $res = <$in>;
   chop $res;
-  if ($res) {
+  if ($res and $res ne '*') {
     print R "$mis\t$cor\t-1\t-1\n";
     $res = <$in>;
   } else {
+    while ($res eq '*') {
+      $res = <$in>;
+      chomp $res;
+    }
     print $out "$mis\n";
     $res = <$in>;
     chop $res;
     if (!$res) {
       print R "$mis\t$cor\t-1\t-1\n";
+    } elsif ($res eq '*') {
+      print R "$mis\t$cor\t-1\t-1\n";
+      <$in>;
     } else {
       my ($info, $list) = split /: /, $res;
       my ($key, undef, $num, undef) = split / /, $info;

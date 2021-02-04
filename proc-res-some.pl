@@ -17,7 +17,7 @@ my $dir = $ARGV[0];
 chdir $dir;
 
 our ($what,$notes,@data);
-do "info.pl";
+do "./info.pl";
 
 my $num;
 my @table;

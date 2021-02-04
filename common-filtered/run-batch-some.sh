@@ -1,16 +1,16 @@
 echo 0.31 NORMAL
-./run-batch.pl '/opt/aspell-0.31/bin/aspell --sug-mode=normal' aspell-.31-normal
+./run-batch.pl '/opt/aspell-0.31/bin/aspell --sug-mode=normal -S' aspell-.31-normal
 
 echo 0.33 NORMAL
-./run-batch.pl '/opt/aspell-0.33/bin/aspell --sug-mode=normal' aspell-.33-normal
+./run-batch.pl '/opt/aspell-0.33/bin/aspell --sug-mode=normal -S' aspell-.33-normal
 
 echo 0.50 NORMAL
-./run-batch.pl '/opt/aspell-0.50/bin/aspell --sug-mode=normal' aspell-.50-normal
+./run-batch.pl '/opt/aspell-0.50/bin/aspell --sug-mode=normal -S' aspell-.50-normal
 
 echo 0.60 NORMAL
-./run-batch.pl 'aspell --sug-mode=normal' aspell-.60-normal
+./run-batch.pl 'aspell --sug-mode=normal -S' aspell-.60-normal
 echo 0.60 SLOW
-./run-batch.pl 'aspell --sug-mode=slow' aspell-.60-slow
+./run-batch.pl 'aspell --sug-mode=slow -S' aspell-.60-slow
 
 ASPELL_FIX=/home/kevina/aspell-0.60-cvs/inst/bin/aspell
 
@@ -26,11 +26,14 @@ echo CVS NORMAL
 echo CVS SLOW
 ./run-batch.pl "$ASPELL_FIX2 --sug-mode=slow" aspell-cvs-slow
 
-echo HUNSPELL
-./run-batch.pl 'hunspell -d ~/en_US' hunspell
+echo NUSPELL
+./run-batch.pl 'nuspell' nuspell
 
 echo HUNSPELL
-./run-batch.pl 'hunspell -0 -d ./en_US' hunspell-phonet
+./run-batch.pl 'hunspell -d ~/en_US -S' hunspell
+
+echo HUNSPELL
+./run-batch.pl 'hunspell -0 -d ./en_US -S' hunspell-phonet
 
 echo ISPELL
-./run-batch.pl 'ispell' ispell
+./run-batch.pl 'ispell -S' ispell
